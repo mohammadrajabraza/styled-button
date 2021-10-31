@@ -1,6 +1,7 @@
+import { Button } from './styled'
 const StyledButton = () => {
   return (
-    <button>Button</button>
+    <Button>Button</Button>
   )
 }
 
