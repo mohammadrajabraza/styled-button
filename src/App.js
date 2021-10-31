@@ -3,7 +3,7 @@ import StyledButton from './components/StyledButton/StyledButton'
 function App () {
   return (
     <div className='App'>
-      <StyledButton />
+      <StyledButton text='Button' />
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { Button } from './styled'
-const StyledButton = () => {
+const StyledButton = ({ text }) => {
   return (
-    <Button>Button</Button>
+    <Button>{text}</Button>
   )
 }
 
