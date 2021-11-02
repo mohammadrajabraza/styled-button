@@ -43,4 +43,24 @@ export const Button = styled.button`
             border-color : #558b2f;
         }
     `}
+
+    ${props => props.tertiary && `
+        background-color : #ff6f00;
+        border-color : #ff6f00;
+
+        &:hover {
+            background-color : #e65100;
+            border-color : #e65100;
+        }
+
+        &:active {
+            background-color : #ef6c00;
+            border-color : #ef6c00;
+        }
+
+        &:disabled {
+            background-color : #ff8f00;
+            border-color : #ff8f00;
+        }
+    `}
 `
