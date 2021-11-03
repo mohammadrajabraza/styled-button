@@ -1,28 +1,31 @@
 import styled from 'styled-components'
 export const Button = styled.button`
-    background-color: #01579b;
     color: #fff;
     font-size : 16px;
     line-height : 24px;
     font-weight: 400;
     padding: 6px 12px;
     border-radius: 5px;
-    border: 1px solid #01579b;
+    border: 1px solid;
 
-    &:hover {
-        background-color: #0d47a1;
-        border-color: #0d47a1;
-    }
+    ${props => props.primary && `
+        background-color: #01579b;
+        border-color: #01579b;
+        &:hover {
+            background-color: #0d47a1;
+            border-color: #0d47a1;
+        }
 
-    &:active {
-        background-color: #1565c0;
-        border-color: #1565c0;
-    }
+        &:active {
+            background-color: #1565c0;
+            border-color: #1565c0;
+        }
 
-    &:disabled {
-        background-color: #0277bd;
-        border-color: #0277bd;
-    }
+        &:disabled {
+            background-color: #0277bd;
+            border-color: #0277bd;
+        }
+    `}
 
     ${props => props.secondary && `
         background-color : #33691e;
