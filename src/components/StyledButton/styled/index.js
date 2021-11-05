@@ -66,4 +66,10 @@ export const Button = styled.button`
             border-color : #ff8f00;
         }
     `}
+
+    ${props => props.large && `
+        font-size : 20px;
+        line-height : 30px;
+        padding : 8px 16px;
+    `}
 `
