@@ -72,4 +72,10 @@ export const Button = styled.button`
         line-height : 30px;
         padding : 8px 16px;
     `}
+
+    ${props => props.small && `
+        font-size : 14px;
+        line-height : 21px;
+        padding : 4px 8px;
+    `}
 `
