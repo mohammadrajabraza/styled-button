@@ -5,7 +5,7 @@ export const Button = styled.button`
     line-height : 24px;
     font-weight: 400;
     padding: 6px 12px;
-    border-radius: 5px;
+    border-radius: ${props => props.pill ? 50 : 5}px;
     border: 1px solid;
 
     ${props => props.primary && `
