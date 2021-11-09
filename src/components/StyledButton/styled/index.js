@@ -8,6 +8,10 @@ export const Button = styled.button`
     border-radius: ${props => props.pill ? 50 : 5}px;
     border: 1px solid;
 
+    ${props => props.fullWidth && `
+        width: 100%;
+    `}
+
     ${props => props.primary && `
         background-color: #01579b;
         border-color: #01579b;
