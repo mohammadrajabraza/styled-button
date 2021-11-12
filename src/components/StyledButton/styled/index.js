@@ -82,4 +82,28 @@ export const Button = styled.button`
         line-height : 21px;
         padding : 4px 8px;
     `}
+
+    ${props => props.outlined && props.primary && `
+        color: #01579b;
+        border-color: #01579b;
+        background-color: transparent;
+
+        &:hover {
+            background-color : #01579b;
+            border-color : #01579b;
+            color: #fff;
+        }
+
+        &:active {
+            background-color : #1565c0;
+            border-color : #1565c0;
+            color: #fff;
+        }
+
+        &:disabled {
+            color: #0277bd;
+            border-color: #0277bd;
+            background-color : transparent;
+        }
+    `}
 `
