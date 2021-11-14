@@ -130,4 +130,28 @@ export const Button = styled.button`
             background-color : transparent;
         }
     `}
+
+    ${props => props.outlined && props.tertiary && `
+        color: #ff6f00;
+        border-color: #ff6f00;
+        background-color: transparent;
+
+        &:hover {
+            background-color : #ff6f00;
+            border-color : #ff6f00;
+            color: #fff;
+        }
+
+        &:active {
+            background-color : #ef6c00;
+            border-color : #ef6c00;
+            color: #fff;
+        }
+
+        &:disabled {
+            color: #ff8f00;
+            border-color: #ff8f00;
+            background-color : transparent;
+        }
+    `}
 `
