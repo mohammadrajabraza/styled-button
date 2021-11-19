@@ -11,6 +11,10 @@ export const Button = styled.button`
     border: 1px solid;
 
     svg {
+        fill: #fff;
+        height: 22px;
+        width: 22px;
+        margin-right: 4px;
         ${props => !props.text && 'margin-left : 6px;'}
     }
 
