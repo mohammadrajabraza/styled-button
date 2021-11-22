@@ -8,6 +8,11 @@ export const Button = styled.button`
     border-radius: ${props => props.pill ? 50 : 5}px;
     border: 1px solid;
 
+    ${props => props.hasChildren && `
+        display: flex;
+        align-items: center;
+    `}
+    
     ${props => props.fullWidth && `
         width: 100%;
     `}

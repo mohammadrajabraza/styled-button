@@ -1,8 +1,11 @@
 import { Button } from './styled'
 const StyledButton = (props) => {
-  const { text } = props
+  const { text, children } = props
   return (
-    <Button {...props}>{text}</Button>
+    <Button {...props} hasChildren={children && true}>
+      {children}
+      {text}
+    </Button>
   )
 }
 
