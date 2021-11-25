@@ -12,4 +12,10 @@ export const SearchIcon = styled(Search)`
         width: 28px;
         margin-right: 8px;
     `}
+
+    ${props => props.small && `
+        height: 18px;
+        width: 18px;
+        margin-right: 4px;
+    `}
 `
