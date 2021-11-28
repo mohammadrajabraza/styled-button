@@ -11,6 +11,7 @@ export const Button = styled.button`
     ${props => props.hasChildren && `
         display: flex;
         align-items: center;
+        justify-content: center;
     `}
     
     ${props => props.fullWidth && `
@@ -92,23 +93,39 @@ export const Button = styled.button`
         color: #01579b;
         border-color: #01579b;
         background-color: transparent;
+        
+        svg {
+            fill: #01579b;
+        }
 
         &:hover {
             background-color : #01579b;
             border-color : #01579b;
             color: #fff;
+
+            svg {
+                fill: #fff;
+            }
         }
 
         &:active {
             background-color : #1565c0;
             border-color : #1565c0;
             color: #fff;
+
+            svg {
+                fill: #fff;
+            }
         }
 
         &:disabled {
             color: #0277bd;
             border-color: #0277bd;
             background-color : transparent;
+
+            svg {
+                fill: #0277bd;
+            }
         }
     `}
 
