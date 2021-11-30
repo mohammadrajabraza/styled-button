@@ -134,22 +134,38 @@ export const Button = styled.button`
         border-color: #33691e;
         background-color: transparent;
 
+        svg {
+            fill: #33691e;
+        }
+
         &:hover {
             background-color : #33691e;
             border-color : #33691e;
             color: #fff;
+
+            svg {
+                fill: #fff;
+            }
         }
 
         &:active {
             background-color : #2e7d32;
             border-color : #2e7d32;
             color: #fff;
+
+            svg {
+                fill: #fff;
+            }
         }
 
         &:disabled {
             color: #558b2f;
             border-color: #558b2f;
             background-color : transparent;
+
+            svg {
+                fill: #558b2f;
+            }
         }
     `}
 
