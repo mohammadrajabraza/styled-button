@@ -4,9 +4,13 @@ export const Button = styled.button`
     font-size : 16px;
     line-height : 24px;
     font-weight: 400;
-    padding: 6px 12px;
+    padding: ${props => !props.text ? '7px 4px' : '6px 12px'};
     border-radius: ${props => props.pill ? 50 : 5}px;
     border: 1px solid;
+
+    svg {
+        ${props => !props.text && 'margin-left : 6px;'}
+    }
 
     ${props => props.hasChildren && `
         display: flex;
