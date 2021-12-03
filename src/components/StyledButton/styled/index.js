@@ -94,6 +94,10 @@ export const Button = styled.button`
         font-size : 14px;
         line-height : 21px;
         padding : 4px 8px;
+        padding: ${!props.text ? '5.5px 3px' : '4px 8px'};
+        svg {
+            ${!props.text && 'margin-left : 5px;'}
+        }
     `}
 
     ${props => props.outlined && props.primary && `
