@@ -4,7 +4,9 @@ export const Button = styled.button`
     font-size : 16px;
     line-height : 24px;
     font-weight: 400;
-    padding: ${props => !props.text ? '7px 4px' : '6px 12px'};
+    padding: ${props => !props.text
+        ? (props.pill ? '7px 2px' : '7px 4px')
+        : '6px 12px'};
     border-radius: ${props => props.pill ? 50 : 5}px;
     border: 1px solid;
 
