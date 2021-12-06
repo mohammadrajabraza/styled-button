@@ -86,7 +86,9 @@ export const Button = styled.button`
     ${props => props.large && `
         font-size : 20px;
         line-height : 30px;
-        padding: ${!props.text ? '9px 3px' : '8px 16px'};
+        padding: ${!props.text
+            ? (props.pill ? '9px 1px' : '9px 3px')
+            : '8px 16px'};
         svg {
             ${!props.text && 'margin-left : 8px;'}
         }
