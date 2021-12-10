@@ -95,6 +95,9 @@ export const Button = styled.button`
             : '8px 16px'};
         svg {
             ${!props.text && 'margin-left : 8px;'}
+            height: 28px;
+            width: 28px;
+            margin-right: 8px;
         }
     `}
 
