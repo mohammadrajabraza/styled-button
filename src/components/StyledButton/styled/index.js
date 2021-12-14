@@ -110,6 +110,9 @@ export const Button = styled.button`
             : '4px 8px'};
         svg {
             ${!props.text && 'margin-left : 5px;'}
+            height: 18px;
+            width: 18px;
+            margin-right: 4px;
         }
     `}
 
