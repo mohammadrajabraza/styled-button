@@ -28,7 +28,7 @@ export const Button = styled.button`
         width: 100%;
     `}
 
-    ${props => props.primary && `
+    ${props => props.color === 'primary' && `
         background-color: #01579b;
         border-color: #01579b;
         &:hover {
@@ -47,7 +47,7 @@ export const Button = styled.button`
         }
     `}
 
-    ${props => props.secondary && `
+    ${props => props.color === 'secondary' && `
         background-color : #33691e;
         border-color : #33691e;
 
@@ -67,7 +67,7 @@ export const Button = styled.button`
         }
     `}
 
-    ${props => props.tertiary && `
+    ${props => props.color === 'tertiary' && `
         background-color : #ff6f00;
         border-color : #ff6f00;
 
@@ -116,7 +116,7 @@ export const Button = styled.button`
         }
     `}
 
-    ${props => props.outlined && props.primary && `
+    ${props => props.outlined && props.color === 'primary' && `
         color: #01579b;
         border-color: #01579b;
         background-color: transparent;
@@ -156,7 +156,7 @@ export const Button = styled.button`
         }
     `}
 
-    ${props => props.outlined && props.secondary && `
+    ${props => props.outlined && props.color === 'secondary' && `
         color: #33691e;
         border-color: #33691e;
         background-color: transparent;
@@ -196,7 +196,7 @@ export const Button = styled.button`
         }
     `}
 
-    ${props => props.outlined && props.tertiary && `
+    ${props => props.outlined && props.color === 'tertiary' && `
         color: #ff6f00;
         border-color: #ff6f00;
         background-color: transparent;

@@ -1,17 +1,15 @@
 import { Button } from './styled'
 import React from 'react'
 const StyledButton = (props) => {
-  const { text, primary, secondary, tertiary, children, ...restProps } = props
+  const { text, color, children, ...restProps } = props
   return (
     <Button
-      tertiary={tertiary}
-      secondary={secondary}
-      primary={primary}
+      color={color}
       hasChildren={children && true}
       {...restProps}
       hasText={text}
     >
-      {children && React.cloneElement(children, { primary, secondary, tertiary })}
+      {children && React.cloneElement(children, { color })}
       {text}
     </Button>
   )
