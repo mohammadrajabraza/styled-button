@@ -4,7 +4,7 @@ export const Button = styled.button`
     font-size : 16px;
     line-height : 24px;
     font-weight: 400;
-    padding: ${props => !props.text
+    padding: ${props => !props.hasText
         ? (props.pill ? '7px 2px' : '7px 4px')
         : '6px 12px'};
     border-radius: ${props => props.pill ? 50 : 5}px;
@@ -15,7 +15,7 @@ export const Button = styled.button`
         height: 22px;
         width: 22px;
         margin-right: 4px;
-        ${props => !props.text && 'margin-left : 6px;'}
+        ${props => !props.hasText && 'margin-left : 6px;'}
     }
 
     ${props => props.hasChildren && `
@@ -90,11 +90,11 @@ export const Button = styled.button`
     ${props => props.large && `
         font-size : 20px;
         line-height : 30px;
-        padding: ${!props.text
+        padding: ${!props.hasText
             ? (props.pill ? '9px 1px' : '9px 3px')
             : '8px 16px'};
         svg {
-            ${!props.text && 'margin-left : 8px;'}
+            ${!props.hasText && 'margin-left : 8px;'}
             height: 28px;
             width: 28px;
             margin-right: 8px;
@@ -105,11 +105,11 @@ export const Button = styled.button`
         font-size : 14px;
         line-height : 21px;
         padding : 4px 8px;
-        padding: ${!props.text
+        padding: ${!props.hasText
             ? (props.pill ? '5.5px 1px' : '5.5px 3px')
             : '4px 8px'};
         svg {
-            ${!props.text && 'margin-left : 5px;'}
+            ${!props.hasText && 'margin-left : 5px;'}
             height: 18px;
             width: 18px;
             margin-right: 4px;
