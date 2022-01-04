@@ -87,7 +87,7 @@ export const Button = styled.button`
         }
     `}
 
-    ${props => props.large && `
+    ${props => props.size === 'large' && `
         font-size : 20px;
         line-height : 30px;
         padding: ${!props.hasText
@@ -101,7 +101,7 @@ export const Button = styled.button`
         }
     `}
 
-    ${props => props.small && `
+    ${props => props.size === 'small' && `
         font-size : 14px;
         line-height : 21px;
         padding : 4px 8px;
